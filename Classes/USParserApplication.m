@@ -99,7 +99,7 @@
     panel.canChooseDirectories = NO;
     panel.resolvesAliases = NO;
     panel.allowsMultipleSelection = NO;
-    panel.allowedFileTypes = @[@"wsdl"];
+    panel.allowedFileTypes = @[ @"wsdl", @"xml" ];
 
 	if ([panel runModal] == NSOKButton) {
 		NSURL *chosenPath = [[panel URLs] lastObject];
